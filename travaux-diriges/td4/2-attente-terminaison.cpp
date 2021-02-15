@@ -1,7 +1,5 @@
 #include <iostream>
-#include <unistd.h>
 #include <thread>
-#include <string>
 
 using namespace std;
 
@@ -10,11 +8,10 @@ void afficher(string message) {
 }
 
 int main() {
-    thread a(afficher, "Hello ");
-    a.join();
-    thread b(afficher, "World "); // Le thread "b" s'exécute après que le thread "a" aie fini
-    b.join();
-    cout << "! " << endl;
+    thread t1(afficher, "Hello ");
+    t1.join();
+    thread t2(afficher, "World !\n");
+    t2.join();
 
     return 0;
 }
