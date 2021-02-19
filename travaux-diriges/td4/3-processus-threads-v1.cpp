@@ -26,7 +26,8 @@ int main() {
         i += 2000;
         cout << "Bonjour père : " << i << endl;
         wait(NULL);
-    } 
+    }
+    
     return 0;
 }
 

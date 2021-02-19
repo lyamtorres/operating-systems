@@ -1,8 +1,4 @@
 #include <iostream>
-#include <sys/types.h> 
-#include <unistd.h> 
-#include <sys/wait.h> 
-#include <stdlib.h> 
 #include <thread> 
 
 using namespace std;
@@ -22,8 +18,9 @@ int main() {
     thread t(fils);
     i += 1000;
     cout << "Bonjour père : " << i << endl;
-    i =+ 2000;
+    i += 2000;
     cout << "Bonjour père : " << i << endl;
     t.join();
+
     return 0;
 }
