@@ -9,25 +9,29 @@ int main() {
     pid_t pid;
     int i;
 
-    pid = fork(); // Le père crée le 1er fils
+    cout << "Le pid est du père est : " << getpid() << endl;
+    pid = fork();
     if (pid == -1) {
         perror("Error");
         exit(1);
     } else if (pid == 0) {
-        execlp("who", "who", NULL); // Le 2ème fils crée exécute la commande 'who'
+        cout << "Le pid est du 1er fils est : " << getpid() << endl;
+        execlp("who", "who", NULL); // Le 1er fils exécute la commande 'who'
         perror("execlp");
     } else {
-        pid = fork(); // Le père crée le 2ème fils
+        pid = fork();
         if (pid == -1) {
             perror("fork");
             exit(1);
         } else if (pid == 0) {
-            execlp("ps", "ps", NULL); // Le 2ème fils exécute la commande 'ps'
+            cout << "Le pid est du 2e fils est : " << getpid() << endl;
+            execlp("ps", "ps", NULL); // Le 2ème fils exécute la commande 'ps' ?
             perror("execlp");
         } else {
-            execlp("ls", "ls", "-l", NULL); // Qui exécute la commande 'ls -l' ? Le père ou le 1er fils ?
+            execlp("ls", "ls", "-l", NULL); // Le père exécute la commande 'ls -l' ?
             perror("execlp");
         }
+
     return 0;
     }
 }
