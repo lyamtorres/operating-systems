@@ -24,10 +24,10 @@ int main() {
         i += 1000;
         cout << "Bonjour père : " << i << endl;
         i += 2000;
-        cout << "Bonjour père : " << i << endl;
         wait(NULL);
+        cout << "Bonjour père : " << i << endl;
     }
-    
+
     return 0;
 }
 
