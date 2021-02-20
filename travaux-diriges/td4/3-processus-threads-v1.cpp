@@ -24,11 +24,9 @@ int main() {
         i += 1000;
         cout << "Bonjour père : " << i << endl;
         i += 2000;
-        wait(NULL);
         cout << "Bonjour père : " << i << endl;
+        wait(NULL);   
     }
 
     return 0;
 }
-
-// Question : Pourquoi le père s'exécute toujours avant le fils ?
