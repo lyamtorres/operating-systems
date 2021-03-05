@@ -1,0 +1,27 @@
+EXERCICE 1
+
+Question 2
+- Waiting time mean : Moyenne de temps pendant lequel les processus attendent les ressources.
+- Response time mean : Moyenne de temps entre l'envoie de la requête jusqu'au début de l'arrivée des réponses.
+- CPU percentage : Pourcentage de la puissance du processeur destinée à chaque processus.
+
+Question 3
+L'algorithme RR génère la même valeur à partir de 6 quantum.
+
+EXERCICE 3
+
+Question 1
+Les écheances sont respectées uniquement par P1.
+
+Question 2
+P1 : Priorité = 3
+P2 : Priorité = 2
+P3 : Priorité = 1
+
+EXERCICE 4
+
+Question 1
+	- chrt est une commande pour manipuler les valeurs en temps réel d'un processus.
+	- Avec l'option -m il nous montre les valeurs min et max des priorités valides.
+	
+Question 2

@@ -33,3 +33,5 @@ int main() {
 
     return 0;
 }
+
+// Changer le programme pour qu'il n'y ait pas des processus fils qui se créent. Le processus père suffit pour gérer l'exécution de manière sequentielle.
