@@ -1,0 +1,25 @@
+Exercice 1
+
+1)  - La commande 'ps' nous montre des processus qui s'exécutent dans le système.
+    - L'option -l nous donne quelques informations de plus telles que F, S, UID, PPID, C, PRI, NI, ADDR, SZ, WCHAN.
+
+2)  - UID : Correspond à l'utilisateur pour lequel il fonctionne
+    - STIME : Heure de lancement
+    - TTY : La terminal ou la fenêtre du processus 
+
+    Le processus avec un PID égal à 1 c'est splash
+
+3)  a. Avec la touche f, on peut activer des nouvelles options d'affichage.
+    b. Les processus semblent être listées par ordre croissant de celui qui consomme le plus de mémoire.
+    c. On écrit 'top -u nomUtilsateur'.
+    d. On peut utiliser la touche k afin d'avoir l'option d'envoyer le signal SIGKILL.
+    e. Avec la touche e c'est possible de changer la vitesse de mise à jour.
+
+Exercice 2
+
+1) ???
+
+2) Le processus executant vscode s'arrête après avoir utilisé la commande kill. La fenêtre du terminal se ferme car le PID du bash qu'on a decidé d'arrêter correspond au terminal. 
+
+
+
