@@ -3,7 +3,7 @@
 # Affiche le jour de la semaine en toutes lettres en fonction du paramètre
 
 if [ $# -gt 1 ] ; then # Si le nombre de paramètres est superieur à 1 
-    echo "Erreur..." >&2
+    echo "Erreur, trop d'arguments." >&2
     exit 1
 fi
 
