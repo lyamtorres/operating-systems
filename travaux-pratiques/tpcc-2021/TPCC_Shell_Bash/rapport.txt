@@ -1,0 +1,25 @@
+Exercice 1
+
+Tout d'abord on vérifie si le nombre d'arguments est égal à 1. Ensuite on vérifie s'il s'agit d'un dossier. Si c'est le cas, on crée une variable "var" et on stocke la commande "ls -R" (de l'argument passé en paramètre) dans cette variable, pour afficher tous les arguments de la varible de facon récursive. Ensuite on affiche le contenu de la variable "var". Si l'argument n'est pas un dossier ou si le nombre d'arguments est différent de 1, le programme affichera un message d'erreur.
+
+Exercice 2
+
+1)  grep "x$" dico_francais.txt | egrep "z{1,3}"
+
+    Affichage : 
+    azoteux 
+    gazeux
+
+2)  egrep ".* en .*" dico_francais.txt
+
+    Affichage :
+    agir en maître
+    cheveux en brosse
+    colonne en bois
+    plus en plus
+    rédacteur en chef
+
+3)  egrep "[A-Z]{1,}" dico_francais.txt | egrep "[\.\!\?\:\;]{1,}"
+
+    Affichage : 
+    U.S.A.
